@@ -80,11 +80,11 @@ export default function Home() {
           }}
           className="border-b-8 border-[--primary-color]"
         ></section>
-        <section className="bg-[url('/section-quem-somos-background.png')] bg-container bg-no-repeat bg-right relative my-20">
+        <section className="bg-[url('/section-quem-somos-background.png')] bg-contain bg-no-repeat relative my-20 bg-[center_bottom_30%] lg:bg-[right_10%_center]">
           <div className="absolute inset-0 z-20 from-hero-gradient-from to-hero-gradient-to bg-white/[.9]"></div>
           <div className="max-w-screen-2xl mx-auto container flex flex-wrap relative z-30 px-6">
-            <div className="flex items-center justify-center w-full lg:w-1/2">
-              <div className="pr-[3rem]">
+            <div className="flex items-center justify-center w-full lg:w-1/2 mb-10 lg:mb-0">
+              <div className="lg:pr-[3rem]">
                 <Image
                   alt="Hero Illustration"
                   loading="eager"
@@ -100,7 +100,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center w-full lg:w-1/2">
-              <div className="max-w-2xl pl-[5rem]">
+              <div className="max-w-2xl lg:pl-[5rem]">
                 <p className="font-bold">Qui si psum suspendi sse</p>
                 <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter text-[--primary-color]">
                   Quem somos
@@ -139,10 +139,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="flex">
-          <div className="flex items-center justify-center w-full lg:w-1/2 bg-[url('/section-3-image.jpg')] bg-cover bg-no-repeat bg-center"></div>
-          <div className="flex items-center w-full lg:w-1/2 bg-[#261d18] py-[8rem]">
-            <div className="max-w-2xl text-white pl-[5rem]">
+        <section className="flex flex-wrap relative">
+          <div className="flex items-center justify-center w-full lg:w-1/2 bg-[url('/section-3-image.jpg')] bg-cover bg-no-repeat bg-center h-96 lg:h-auto"></div>
+          <div className="flex items-center lg:w-1/2 bg-[#261d18] py-24 lg:py-32 max-w-screen-2xl mx-auto container flex-wrap relative px-6 lg:pl-24 lg:pr-0">
+            <div className="lg:max-w-2xl text-white">
               <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
                 Consectetur adipisicing
               </h1>
@@ -168,17 +168,29 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col pt-20">
-          <div className="max-w-screen-2xl mx-auto flex flex-col">
-            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-              O{" "}
-              <span className="text-[--primary-color]">
-                Multi Family Office
-              </span>{" "}
-              focado nas pessoas
-            </h1>
-            <div className="flex items-center container pt-20">
-              <div className="max-w-2xl flex-row w-[40%]">
+        <section className="flex flex-col pt-20 container mx-auto">
+          <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+            O{" "}
+            <span className="text-[--primary-color]">Multi Family Office</span>{" "}
+            focado nas pessoas
+          </h1>
+          <div className="flex items-center flex-col lg:flex-row pt-20">
+            <div className="lg:w-[40%] pb-16">
+              <Image
+                alt="Hero Illustration"
+                loading="eager"
+                width="616"
+                height="617"
+                decoding="async"
+                data-nimg="1"
+                className="object-cover"
+                // style="color: transparent;"
+                // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
+                src="/section-services-image.png"
+              />
+            </div>
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-20 lg:w-[60%] lg:pl-20">
+              <div className="w-50">
                 <Image
                   alt="Hero Illustration"
                   loading="eager"
@@ -186,141 +198,117 @@ export default function Home() {
                   height="617"
                   decoding="async"
                   data-nimg="1"
-                  className="object-cover"
+                  className="object-cover mb-3"
                   // style="color: transparent;"
                   // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
-                  src="/section-services-image.png"
+                  src="/section-services-service-1.png"
                 />
+                <h2 className="text-2xl mb-3">
+                  Gestão patrimonial sucessão e planejamento
+                </h2>
+                <p className="mb-3">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Mattis
+                  ante pharetra et justo semper vehicula dui a. Dictumst mollis
+                  aliquam ultricies vel massa conubia viverra urna. Semper mus
+                  class dictumst placerat viverra sed gravida semper. Himenaeos
+                  natoque blandit cubilia integer arcu nostra in proin tempus.
+                </p>
+                <p>
+                  Dolor dignissim nisi tellus vivamus curae mollis non nibh.
+                  Inceptos per semper torquent, dignissim sit facilisis blandit
+                  semper. Magnis varius placerat scelerisque eu arcu interdum
+                  torquent dui. Fusce rutrum lacinia magna blandit metus erat
+                  tellus. Litora eleifend eu justo porttitor malesuada nisl.
+                </p>
               </div>
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-20 lg:grid-cols-2 w-[60%] pl-20">
-                <div className="w-50">
-                  <Image
-                    alt="Hero Illustration"
-                    loading="eager"
-                    width="616"
-                    height="617"
-                    decoding="async"
-                    data-nimg="1"
-                    className="object-cover mb-3"
-                    // style="color: transparent;"
-                    // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
-                    src="/section-services-service-1.png"
-                  />
-                  <h2 className="text-2xl mb-3">
-                    Gestão patrimonial sucessão e planejamento
-                  </h2>
-                  <p className="mb-3">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Mattis
-                    ante pharetra et justo semper vehicula dui a. Dictumst
-                    mollis aliquam ultricies vel massa conubia viverra urna.
-                    Semper mus class dictumst placerat viverra sed gravida
-                    semper. Himenaeos natoque blandit cubilia integer arcu
-                    nostra in proin tempus.
-                  </p>
-                  <p>
-                    Dolor dignissim nisi tellus vivamus curae mollis non nibh.
-                    Inceptos per semper torquent, dignissim sit facilisis
-                    blandit semper. Magnis varius placerat scelerisque eu arcu
-                    interdum torquent dui. Fusce rutrum lacinia magna blandit
-                    metus erat tellus. Litora eleifend eu justo porttitor
-                    malesuada nisl.
-                  </p>
-                </div>
-                <div className="w-50">
-                  <Image
-                    alt="Hero Illustration"
-                    loading="eager"
-                    width="616"
-                    height="617"
-                    decoding="async"
-                    data-nimg="1"
-                    className="object-cover mb-3"
-                    // style="color: transparent;"
-                    // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
-                    src="/section-services-service-2.png"
-                  />
-                  <h2 className="text-2xl mb-3">Assessoria de investimentos</h2>
-                  <p className="mb-3">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Mattis
-                    ante pharetra et justo semper vehicula dui a. Dictumst
-                    mollis aliquam ultricies vel massa conubia viverra urna.
-                    Semper mus class dictumst placerat viverra sed gravida
-                    semper. Himenaeos natoque blandit cubilia integer arcu
-                    nostra in proin tempus.
-                  </p>
-                  <p>
-                    Dolor dignissim nisi tellus vivamus curae mollis non nibh.
-                    Inceptos per semper torquent, dignissim sit facilisis
-                    blandit semper. Magnis varius placerat scelerisque eu arcu
-                    interdum torquent dui. Fusce rutrum lacinia magna blandit
-                    metus erat tellus. Litora eleifend eu justo porttitor
-                    malesuada nisl.
-                  </p>
-                </div>
-                <div className="w-50">
-                  <Image
-                    alt="Hero Illustration"
-                    loading="eager"
-                    width="616"
-                    height="617"
-                    decoding="async"
-                    data-nimg="1"
-                    className="object-cover mb-3"
-                    // style="color: transparent;"
-                    // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
-                    src="/section-services-service-3.png"
-                  />
-                  <h2 className="text-2xl mb-3">
-                    Curadoria jurídica Ronaldo Martins & Advogados
-                  </h2>
-                  <p className="mb-3">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Mattis
-                    ante pharetra et justo semper vehicula dui a. Dictumst
-                    mollis aliquam ultricies vel massa conubia viverra urna.
-                    Semper mus class dictumst placerat viverra sed gravida
-                    semper. Himenaeos natoque blandit cubilia integer arcu
-                    nostra in proin tempus.
-                  </p>
-                  <p>
-                    Dolor dignissim nisi tellus vivamus curae mollis non nibh.
-                    Inceptos per semper torquent, dignissim sit facilisis
-                    blandit semper. Magnis varius placerat scelerisque eu arcu
-                    interdum torquent dui. Fusce rutrum lacinia magna blandit
-                    metus erat tellus. Litora eleifend eu justo porttitor
-                    malesuada nisl.
-                  </p>
-                </div>
-                <div className="w-50">
-                  <Image
-                    alt="Hero Illustration"
-                    loading="eager"
-                    width="616"
-                    height="617"
-                    decoding="async"
-                    data-nimg="1"
-                    className="object-cover mb-3"
-                    // style="color: transparent;"
-                    // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
-                    src="/section-services-service-4.png"
-                  />
-                  <h2 className="text-2xl mb-3">Novos negócios</h2>
-                  <p className="mb-3">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Mattis
-                    ante pharetra et justo semper vehicula dui a. Dictumst
-                    mollis aliquam ultricies vel massa conubia viverra urna.
-                    Semper mus class dictumst placerat viverra sed gravida
-                    semper. Himenaeos natoque blandit cubilia integer arcu
-                    nostra in proin tempus.
-                  </p>
-                  <p>
-                    Dolor dignissim nisi tellus vivamus curae mollis non nibh.
-                    Inceptos per semper torquent, dignissim sit facilisis
-                    blandit semper. Magnis varius placerat scelerisque eu arcu
-                    interdum torquent dui. Fusce rutrum lacinia magna blandit
-                    metus erat tellus. Litora eleifend eu justo porttitor
-                    malesuada nisl.
-                  </p>
-                </div>
+              <div className="w-50">
+                <Image
+                  alt="Hero Illustration"
+                  loading="eager"
+                  width="616"
+                  height="617"
+                  decoding="async"
+                  data-nimg="1"
+                  className="object-cover mb-3"
+                  // style="color: transparent;"
+                  // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
+                  src="/section-services-service-2.png"
+                />
+                <h2 className="text-2xl mb-3">Assessoria de investimentos</h2>
+                <p className="mb-3">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Mattis
+                  ante pharetra et justo semper vehicula dui a. Dictumst mollis
+                  aliquam ultricies vel massa conubia viverra urna. Semper mus
+                  class dictumst placerat viverra sed gravida semper. Himenaeos
+                  natoque blandit cubilia integer arcu nostra in proin tempus.
+                </p>
+                <p>
+                  Dolor dignissim nisi tellus vivamus curae mollis non nibh.
+                  Inceptos per semper torquent, dignissim sit facilisis blandit
+                  semper. Magnis varius placerat scelerisque eu arcu interdum
+                  torquent dui. Fusce rutrum lacinia magna blandit metus erat
+                  tellus. Litora eleifend eu justo porttitor malesuada nisl.
+                </p>
+              </div>
+              <div className="w-50">
+                <Image
+                  alt="Hero Illustration"
+                  loading="eager"
+                  width="616"
+                  height="617"
+                  decoding="async"
+                  data-nimg="1"
+                  className="object-cover mb-3"
+                  // style="color: transparent;"
+                  // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
+                  src="/section-services-service-3.png"
+                />
+                <h2 className="text-2xl mb-3">
+                  Curadoria jurídica Ronaldo Martins & Advogados
+                </h2>
+                <p className="mb-3">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Mattis
+                  ante pharetra et justo semper vehicula dui a. Dictumst mollis
+                  aliquam ultricies vel massa conubia viverra urna. Semper mus
+                  class dictumst placerat viverra sed gravida semper. Himenaeos
+                  natoque blandit cubilia integer arcu nostra in proin tempus.
+                </p>
+                <p>
+                  Dolor dignissim nisi tellus vivamus curae mollis non nibh.
+                  Inceptos per semper torquent, dignissim sit facilisis blandit
+                  semper. Magnis varius placerat scelerisque eu arcu interdum
+                  torquent dui. Fusce rutrum lacinia magna blandit metus erat
+                  tellus. Litora eleifend eu justo porttitor malesuada nisl.
+                </p>
+              </div>
+              <div className="w-50">
+                <Image
+                  alt="Hero Illustration"
+                  loading="eager"
+                  width="616"
+                  height="617"
+                  decoding="async"
+                  data-nimg="1"
+                  className="object-cover mb-3"
+                  // style="color: transparent;"
+                  // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
+                  src="/section-services-service-4.png"
+                />
+                <h2 className="text-2xl mb-3">Novos negócios</h2>
+                <p className="mb-3">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Mattis
+                  ante pharetra et justo semper vehicula dui a. Dictumst mollis
+                  aliquam ultricies vel massa conubia viverra urna. Semper mus
+                  class dictumst placerat viverra sed gravida semper. Himenaeos
+                  natoque blandit cubilia integer arcu nostra in proin tempus.
+                </p>
+                <p>
+                  Dolor dignissim nisi tellus vivamus curae mollis non nibh.
+                  Inceptos per semper torquent, dignissim sit facilisis blandit
+                  semper. Magnis varius placerat scelerisque eu arcu interdum
+                  torquent dui. Fusce rutrum lacinia magna blandit metus erat
+                  tellus. Litora eleifend eu justo porttitor malesuada nisl.
+                </p>
               </div>
             </div>
           </div>
