@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { HeroSection } from "@/components/ecosystems/HeroSection";
 import { SectionGestaoPatrimonial } from "@/components/ecosystems/SectionGestaoPatrimonial";
+import { SectionProfessionals } from "@/components/ecosystems/SectionProfessionals";
 
 export default function Home() {
   return (
@@ -385,6 +386,7 @@ export default function Home() {
           </div>
         </section>
         <SectionGestaoPatrimonial />
+        <SectionProfessionals />
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
