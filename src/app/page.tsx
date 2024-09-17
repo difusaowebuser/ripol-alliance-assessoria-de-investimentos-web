@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { HeroSection } from "@/components/ecosystems/HeroSection";
+import { SectionGestaoPatrimonial } from "@/components/ecosystems/SectionGestaoPatrimonial";
 
 export default function Home() {
   return (
@@ -210,13 +211,25 @@ export default function Home() {
                   class dictumst placerat viverra sed gravida semper. Himenaeos
                   natoque blandit cubilia integer arcu nostra in proin tempus.
                 </p>
-                <p>
+                <p className="mb-5">
                   Dolor dignissim nisi tellus vivamus curae mollis non nibh.
                   Inceptos per semper torquent, dignissim sit facilisis blandit
                   semper. Magnis varius placerat scelerisque eu arcu interdum
                   torquent dui. Fusce rutrum lacinia magna blandit metus erat
                   tellus. Litora eleifend eu justo porttitor malesuada nisl.
                 </p>
+                <Image
+                  alt="Ripol Alliance Multi-Family Office Logo Menu"
+                  loading="lazy"
+                  width="300"
+                  height="63"
+                  decoding="async"
+                  data-nimg="1"
+                  className="object-cover"
+                  // style="color: transparent;"
+                  // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
+                  src="/section-services-ripol-alliance-gestao-de-patrimonio-logo.png"
+                />
               </div>
               <div className="w-50">
                 <Image
@@ -239,13 +252,25 @@ export default function Home() {
                   class dictumst placerat viverra sed gravida semper. Himenaeos
                   natoque blandit cubilia integer arcu nostra in proin tempus.
                 </p>
-                <p>
+                <p className="mb-5">
                   Dolor dignissim nisi tellus vivamus curae mollis non nibh.
                   Inceptos per semper torquent, dignissim sit facilisis blandit
                   semper. Magnis varius placerat scelerisque eu arcu interdum
                   torquent dui. Fusce rutrum lacinia magna blandit metus erat
                   tellus. Litora eleifend eu justo porttitor malesuada nisl.
                 </p>
+                <Image
+                  alt="Ripol Alliance Multi-Family Office Logo Menu"
+                  loading="lazy"
+                  width="300"
+                  height="63"
+                  decoding="async"
+                  data-nimg="1"
+                  className="object-cover"
+                  // style="color: transparent;"
+                  // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
+                  src="/section-services-ripol-alliance-assessoria-de-investimentos-logo.png"
+                />
               </div>
               <div className="w-50">
                 <Image
@@ -270,13 +295,25 @@ export default function Home() {
                   class dictumst placerat viverra sed gravida semper. Himenaeos
                   natoque blandit cubilia integer arcu nostra in proin tempus.
                 </p>
-                <p>
+                <p className="mb-5">
                   Dolor dignissim nisi tellus vivamus curae mollis non nibh.
                   Inceptos per semper torquent, dignissim sit facilisis blandit
                   semper. Magnis varius placerat scelerisque eu arcu interdum
                   torquent dui. Fusce rutrum lacinia magna blandit metus erat
                   tellus. Litora eleifend eu justo porttitor malesuada nisl.
                 </p>
+                <Image
+                  alt="Ripol Alliance Multi-Family Office Logo Menu"
+                  loading="lazy"
+                  width="300"
+                  height="63"
+                  decoding="async"
+                  data-nimg="1"
+                  className="object-cover"
+                  // style="color: transparent;"
+                  // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
+                  src="/section-services-ronaldo-martins-advogados-logo.png"
+                />
               </div>
               <div className="w-50">
                 <Image
@@ -347,6 +384,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <SectionGestaoPatrimonial />
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
