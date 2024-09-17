@@ -1,22 +1,25 @@
 import Image from "next/image";
 
+import { HeroSection } from "@/components/ecosystems/HeroSection";
+
 export default function Home() {
   return (
     <>
-      <header className="border-t-8 border-[--primary-color] bg-black/[.8]">
-        <div className="max-w-screen-xl mx-auto px-5 flex flex-col lg:flex-row justify-between items-center">
+      <header className="border-t-8 border-[--primary-color] bg-black/[.9] py-3 fixed z-50 w-full text-white">
+        <div className="px-5 flex flex-col lg:flex-row justify-between items-center container mx-auto">
           <div className="flex w-full lg:w-auto items-center justify-between">
             <a href="/" className="text-lg">
-              <img
+              <Image
                 alt="Ripol Alliance Multi-Family Office Logo Menu"
                 loading="lazy"
-                width="738"
-                // height="32"
+                width="300"
+                height="63"
                 decoding="async"
                 data-nimg="1"
-                // className="w-8"
-                // style="color:transparent"
-                src="/Ripol Alliance Multi-Family Office Logo Menu.png"
+                className="object-cover"
+                // style="color: transparent;"
+                // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
+                src="/ripol-alliance-multi-family-office-logo-menu.png"
               />
             </a>
           </div>
@@ -25,7 +28,7 @@ export default function Home() {
               <li>
                 <a
                   href="/pricing"
-                  className="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900"
+                  className="flex lg:px-3 py-2 items-center text-gray-300 hover:text-white"
                 >
                   <span>Sobre</span>
                 </a>
@@ -33,7 +36,7 @@ export default function Home() {
               <li>
                 <a
                   href="/about"
-                  className="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900"
+                  className="flex lg:px-3 py-2 items-center text-gray-300 hover:text-white"
                 >
                   <span>Sócios</span>
                 </a>
@@ -41,7 +44,7 @@ export default function Home() {
               <li>
                 <a
                   href="/blog"
-                  className="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900"
+                  className="flex lg:px-3 py-2 items-center text-gray-300 hover:text-white"
                 >
                   <span>Serviços</span>
                 </a>
@@ -49,7 +52,7 @@ export default function Home() {
               <li>
                 <a
                   href="/contact"
-                  className="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900"
+                  className="flex lg:px-3 py-2 items-center text-gray-300 hover:text-white"
                 >
                   <span>Contato</span>
                 </a>
@@ -73,13 +76,7 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <section
-          style={{
-            height: "600px",
-            borderBottom: "1rem solid var(primary-color)",
-          }}
-          className="border-b-8 border-[--primary-color]"
-        ></section>
+        <HeroSection />
         <section className="bg-[url('/section-quem-somos-background.png')] bg-contain bg-no-repeat relative my-20 bg-[center_bottom_30%] lg:bg-[right_10%_center]">
           <div className="absolute inset-0 z-20 from-hero-gradient-from to-hero-gradient-to bg-white/[.9]"></div>
           <div className="max-w-screen-2xl mx-auto container flex flex-wrap relative z-30 px-6">
