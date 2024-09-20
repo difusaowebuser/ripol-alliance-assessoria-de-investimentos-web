@@ -3,26 +3,26 @@ import Image from "next/image";
 
 const professionals = [
   {
-    avatar: "/rodrigo.png",
-    link: "batata",
+    avatar: "/professional-rodrigo-matins.jpeg",
+    link: "https://www.linkedin.com/in/rodrigo-alonso-martins-8521926/",
     name: "Rodrigo Martins",
     position: "Fundador e CEO",
   },
   {
-    avatar: "/rodrigo.png",
-    link: "batata",
+    avatar: "/professional-sadi-neto.jpeg",
+    link: "https://www.linkedin.com/in/sadi-neto-cfp%C2%AE-36243931",
     name: "Sadi Ribeiro",
     position: "CIO",
   },
   {
-    avatar: "/rodrigo.png",
-    link: "batata",
+    avatar: "/professional-ronaldo-matins.jpeg",
+    link: "https://www.linkedin.com/in/ronaldo-martins-9346288/",
     name: "Ronaldo Martins",
     position: "Fundador",
   },
   {
     avatar: "/rodrigo.png",
-    link: "batata",
+    link: "https://www.linkedin.com/in/veridiana-ribeiro-7008b040/",
     name: "Veridiana Ribeiro",
     position: "Partner",
   },
@@ -31,23 +31,26 @@ const professionals = [
 export const SectionProfessionals = () => {
   return (
     <>
-      <section className="bg-gray-300 py-20">
-        <div className="container flex flex-col lg:flex-row mx-auto">
-          <div className="flex items-center justify-center">
+      <section className="bg-gray-200 py-20">
+        <div className="container flex lg:flex-row mx-auto">
+          <div className="flex items-center justify-center flex-wrap">
             {professionals.map((professional) => (
-              <div className="w-1/4 flex flex-col" key={professional.link}>
-                <div className="">
+              <div
+                className="w-1/2 lg:w-1/4 flex flex-col p-4"
+                key={professional.link}
+              >
+                <div className="mb-3">
                   <Image
-                    alt="Ripol Alliance Multi-Family Office Logo Menu"
+                    alt={professional.name}
                     loading="lazy"
-                    width="600"
-                    height="456"
+                    width="450"
+                    height="450"
                     decoding="async"
                     data-nimg="1"
-                    className="object-cover"
+                    className="object-cover rounded-full"
                     // style="color: transparent;"
                     // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
-                    src="/section-gestao-patrimonial-image.png"
+                    src={professional.avatar}
                   />
                 </div>
                 <div className="flex items-center flex-col">
