@@ -3,7 +3,10 @@ import Image from "next/image";
 
 export const SectionWhoWeAre = () => {
   return (
-    <section className="bg-[url('/section-quem-somos-background.png')] bg-contain bg-no-repeat relative my-20 bg-[center_bottom_30%] lg:bg-[right_10%_center]">
+    <section
+      className="bg-[url('/section-quem-somos-background.png')] bg-contain bg-no-repeat relative my-20 bg-[center_bottom_30%] lg:bg-[right_10%_center]"
+      id="who-we-are"
+    >
       <div className="absolute inset-0 z-20 from-hero-gradient-from to-hero-gradient-to bg-white/[.9]"></div>
       <div className="max-w-screen-2xl mx-auto container flex flex-wrap relative z-30 px-6">
         <div className="flex items-center justify-center w-full lg:w-1/2 mb-10 lg:mb-0">

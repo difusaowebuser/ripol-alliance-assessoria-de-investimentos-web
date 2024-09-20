@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const SectionContact = () => {
   return (
-    <section className="py-24 text-white">
+    <section className="py-24 text-white" id="contact">
       <div className="flex flex-col items-center justify-center container mx-auto">
         <div className="bg-[url('/section-contact-background.jpg')] py-6 rounded-3xl w-full mb-24">
           <div className="flex flex-col items-center justify-center container mx-auto max-w-screen-md py-16">

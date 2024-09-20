@@ -25,7 +25,7 @@ export const Header = () => {
           <ul className="flex flex-col lg:flex-row lg:gap-3">
             <li>
               <a
-                href="/pricing"
+                href="#who-we-are"
                 className="flex lg:px-3 py-2 items-center text-gray-300 hover:text-white"
               >
                 <span>Sobre</span>
@@ -33,7 +33,7 @@ export const Header = () => {
             </li>
             <li>
               <a
-                href="/about"
+                href="#partners"
                 className="flex lg:px-3 py-2 items-center text-gray-300 hover:text-white"
               >
                 <span>Sócios</span>
@@ -41,7 +41,7 @@ export const Header = () => {
             </li>
             <li>
               <a
-                href="/blog"
+                href="#services"
                 className="flex lg:px-3 py-2 items-center text-gray-300 hover:text-white"
               >
                 <span>Serviços</span>
@@ -49,7 +49,7 @@ export const Header = () => {
             </li>
             <li>
               <a
-                href="/contact"
+                href="#contact"
                 className="flex lg:px-3 py-2 items-center text-gray-300 hover:text-white"
               >
                 <span>Contato</span>

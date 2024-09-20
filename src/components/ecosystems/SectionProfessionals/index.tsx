@@ -31,7 +31,7 @@ const professionals = [
 export const SectionProfessionals = () => {
   return (
     <>
-      <section className="bg-gray-200 py-20">
+      <section className="bg-gray-200 py-20" id="partners">
         <div className="container flex lg:flex-row mx-auto">
           <div className="flex items-center justify-center flex-wrap">
             {professionals.map((professional) => (
