@@ -4,11 +4,11 @@ export const Footer = () => {
   return (
     <footer className="text-white border-t-8 border-[--primary-color]">
       <div className="bg-[--brown-color] py-6">
-        <div className="flex items-center justify-center container mx-auto">
-          <h2 className="text-[--primary-color] text-5xl lg:text-6xl">
+        <div className="flex items-center justify-between container mx-auto flex-col lg:flex-row">
+          <h2 className="text-[--primary-color] text-5xl lg:text-6xl mb-6 lg:mb-0 lg:pr-4">
             Consectetur Adipiscing Elit
           </h2>
-          <p>
+          <p className="lg:pl-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

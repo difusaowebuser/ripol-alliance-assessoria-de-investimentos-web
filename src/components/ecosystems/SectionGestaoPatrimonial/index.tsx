@@ -4,8 +4,8 @@ import Image from "next/image";
 export const SectionGestaoPatrimonial = () => {
   return (
     <>
-      <section className="container flex flex-col lg:flex-row mx-auto">
-        <div className="flex items-center justify-center w-1/2">
+      <section className="container flex flex-col lg:flex-row mx-auto pb-12 lg:pb-0">
+        <div className="flex items-center justify-center lg:w-1/2">
           <Image
             alt="Ripol Alliance Multi-Family Office Logo Menu"
             loading="lazy"
@@ -19,7 +19,7 @@ export const SectionGestaoPatrimonial = () => {
             src="/section-gestao-patrimonial-image.png"
           />
         </div>
-        <div className="flex items-center flex-col w-1/2">
+        <div className="flex items-center flex-col lg:w-1/2">
           <h2 className="text-5xl lg:text-6xl xl:text-7xl lg:tracking-tight xl:tracking-tighter mb-3 text-[--primary-color]">
             <span className="font-bold">Gestão integral</span> do patrimônio
           </h2>

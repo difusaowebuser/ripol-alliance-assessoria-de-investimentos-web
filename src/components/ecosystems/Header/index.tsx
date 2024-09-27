@@ -1,6 +1,15 @@
 import * as React from "react";
 import Image from "next/image";
 
+const links = [
+  { link: "#who-we-are", title: "Sobre" },
+  { link: "#partners", title: "Sócios" },
+  { link: "#services", title: "Serviços" },
+  { link: "#contact", title: "Contato" },
+  { link: "#", title: "Assessoria de investimentos" },
+  { link: "#", title: "Gestão patrimonial" },
+];
+
 export const Header = () => {
   return (
     <header className="border-t-8 border-[--primary-color] bg-black/[.9] py-3 fixed z-50 w-full text-white">
@@ -23,40 +32,18 @@ export const Header = () => {
         </div>
         <nav className="astronav-items astronav-toggle hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
           <ul className="flex flex-col lg:flex-row lg:gap-3">
-            <li>
-              <a
-                href="#who-we-are"
-                className="flex lg:px-3 py-2 items-center text-gray-300 hover:text-white"
-              >
-                <span>Sobre</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#partners"
-                className="flex lg:px-3 py-2 items-center text-gray-300 hover:text-white"
-              >
-                <span>Sócios</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#services"
-                className="flex lg:px-3 py-2 items-center text-gray-300 hover:text-white"
-              >
-                <span>Serviços</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="flex lg:px-3 py-2 items-center text-gray-300 hover:text-white"
-              >
-                <span>Contato</span>
-              </a>
-            </li>
+            {links.map((item) => (
+              <li key={item.link}>
+                <a
+                  href={item.link}
+                  className="flex lg:px-3 py-2 items-center text-gray-300 hover:text-white"
+                >
+                  <span>{item.title}</span>
+                </a>
+              </li>
+            ))}
           </ul>
-          <div className="lg:hidden flex items-center mt-3 gap-4">
+          {/* <div className="lg:hidden flex items-center mt-3 gap-4">
             <a
               href="#"
               className="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 w-full px-4 py-2 bg-gray-100 hover:bg-gray-200   border-2 border-transparent"
@@ -69,7 +56,7 @@ export const Header = () => {
             >
               Sign up
             </a>
-          </div>
+          </div> */}
         </nav>
       </div>
     </header>
