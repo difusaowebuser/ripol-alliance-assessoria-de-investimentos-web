@@ -77,7 +77,7 @@ export const HeroSection = () => {
                       alt="Hero Illustration"
                       loading="lazy"
                       width={442}
-                      height={130}
+                      height={248}
                       decoding="async"
                       className="h-[130px] object-cover rounded-lg"
                       src="/section-1-box-first-image.jpg"
@@ -92,10 +92,10 @@ export const HeroSection = () => {
                       alt="Hero Illustration"
                       loading="lazy"
                       width={442}
-                      height={130}
+                      height={248}
                       decoding="async"
                       className="h-[130px] object-cover rounded-lg"
-                      src="/section-1-box-last-image.jpeg"
+                      src="/section-1-box-last-image.png"
                     />
                     <p>
                       A família é o seu bem mais precioso. A construção e a
