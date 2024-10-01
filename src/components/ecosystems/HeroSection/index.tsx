@@ -74,7 +74,7 @@ export const HeroSection = () => {
                 <div className="flex flex-col lg:flex-row bg-white/[.3] w-9/12 p-4 rounded-lg gap-8">
                   <div className="flex flex-row w-6/12 gap-4 items-center">
                     <Image
-                      alt="Hero Illustration"
+                      alt="Homem idoso com capacete e oculos escuro."
                       loading="lazy"
                       width={442}
                       height={248}
@@ -89,7 +89,7 @@ export const HeroSection = () => {
                   </div>
                   <div className="flex flex-row w-6/12 gap-4 items-center">
                     <Image
-                      alt="Hero Illustration"
+                      alt="Família pulando onda na praia."
                       loading="lazy"
                       width={442}
                       height={248}

@@ -4,20 +4,42 @@ import Image from "next/image";
 const services = [
   {
     image: "/section-services-service-1.png",
-    umbrellaImage: "/section-services-gestao-patrimonial-umbrella.png",
+    umbrellaImage: "services-gestao-patrimonial-umbrella",
     title: "Gestão patrimonial sucessão e planejamento",
     description: [
       "A continuidade dos negócios familiares e a transmissão de valores e patrimônio para as próximas gerações são aspectos importantes para a Ripol Alliance.",
       "Por isso, o conselho-executivo e o time de especialistas trabalham de forma próxima a cada família para desenvolver um plano sucessório eficaz, garantindo que o processo de transição seja feito de maneira organizada e sob medida para cada contexto familiar.",
     ],
+    logo: "/section-services-ripol-alliance-gestao-de-patrimonio-logo.png",
   },
   {
     image: "/section-services-service-2.png",
-    umbrellaImage: "/section-services-gestao-patrimonial-umbrella.png",
+    umbrellaImage: "services-assessoria-investimentos-umbrella",
     title: "Assessoria de investimentos",
     description: [
-      "A continuidade dos negócios familiares e a transmissão de valores e patrimônio para as próximas gerações são aspectos importantes para a Ripol Alliance.",
-      "Por isso, o conselho-executivo e o time de especialistas trabalham de forma próxima a cada família para desenvolver um plano sucessório eficaz, garantindo que o processo de transição seja feito de maneira organizada e sob medida para cada contexto familiar.",
+      "Equipe independente de especialistas em investimentos financeiros, focada em construir estratégias que visam à otimização e diversificação dos ativos das famílias.",
+      "O objetivo é garantir a preservação do capital a longo prazo, adaptando-se às condições de mercado e alinhando as estratégias de investimento às necessidades e expectativas de cada família.",
+      "Além dos cuidados com as empresas do grupo familiar, a Ripol Alliance apoia os participantes no cuidado de seus patrimônios e investimentos pessoais, buscando a saúde financeira dos negócios.",
+    ],
+    logo: "/section-services-ripol-alliance-assessoria-de-investimentos-logo.png",
+  },
+  {
+    image: "/section-services-service-3.png",
+    umbrellaImage: "services-curadoria-juridica-umbrella",
+    title: "Curadoria jurídica Ronaldo Martins & Advogados",
+    description: [
+      "A Ripol Alliance conta com a expertise do escritório RONALDO MARTINS & Advogados para oferecer curadoria jurídica. Com mais de 30 anos de experiência, o escritório tem suas raízes em empresas familiares e atua em diversas áreas, como tributária, societária, contratuais, Mergers and Acquisitions (M&A), internacional, civil e trabalhista.",
+      "Esse know-how permite proporcionar um apoio jurídico robusto, garantindo que todas as decisões estratégicas estejam em conformidade com a legislação vigente e sejam estruturadas para proteger o patrimônio e os interesses das famílias.",
+    ],
+    logo: "/section-services-ronaldo-martins-advogados-logo.png",
+  },
+  {
+    image: "/section-services-service-4.png",
+    umbrellaImage: "services-novos-negocios-umbrella",
+    title: "Novos negócios",
+    description: [
+      "Área dedicada ao aconselhamento de nossos clientes sobre as oportunidades existentes de investimentos diretos na chamada Economia Real. Fazemos isso por meio da assessoria para operações de M&A e Joint Ventures, por exemplo.",
+      "Também respondemos às demandas pontuais de nossos clientes junto ao mercado imobiliário para investimento em imóveis de uso pessoal ou comercial. Nossa abordagem inclui, ainda, outros produtos relacionados à formação e à proteção patrimonial, como os seguros de vida e de ativos. Para isso, atuamos na gestão de relacionamentos junto a outros profissionais independentes. Um verdadeiro atendimento personalizado dentro do conceito de Concierge.",
     ],
   },
 ];
@@ -46,20 +68,17 @@ export const SectionServices = () => {
         </div>
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-20 lg:w-[60%] lg:pl-20">
           {services.map((service) => (
-            <div className="w-50" key={service.umbrellaImage}>
+            <div className="w-50 flex flex-col" key={service.umbrellaImage}>
               <div
-                className={`after:block after:relative after:bg-[url('/section-services-gestao-patrimonial-umbrella.png')] after:bg-contain after:-right-[50px] after:w-[100px] after:h-[100px] after:bottom-[100px] after:ml-auto after:mt-auto`}
+                className={`after:block after:relative after-bg-image-${service.umbrellaImage} after:bg-no-repeat after:bg-contain after:-right-[50px] after:w-[100px] after:h-[100px] after:bottom-[100px] after:ml-auto after:mt-auto h-[225px] mb-3`}
               >
                 <Image
-                  alt="Hero Illustration"
-                  loading="eager"
-                  width="616"
-                  height="617"
+                  alt={service.title}
+                  loading="lazy"
+                  width={640}
+                  height={426}
                   decoding="async"
-                  data-nimg="1"
-                  className="object-cover mb-3"
-                  // style="color: transparent;"
-                  // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
+                  className="h-[225px] object-cover rounded-lg"
                   src={service.image}
                 />
               </div>
@@ -69,142 +88,19 @@ export const SectionServices = () => {
                   {p}
                 </p>
               ))}
-              {/* <p className="mb-5">
-                Dolor dignissim nisi tellus vivamus curae mollis non nibh.
-                Inceptos per semper torquent, dignissim sit facilisis blandit
-                semper. Magnis varius placerat scelerisque eu arcu interdum
-                torquent dui. Fusce rutrum lacinia magna blandit metus erat
-                tellus. Litora eleifend eu justo porttitor malesuada nisl.
-              </p> */}
-              <Image
-                alt="Ripol Alliance Multi-Family Office Logo Menu"
-                loading="lazy"
-                width="300"
-                height="63"
-                decoding="async"
-                data-nimg="1"
-                className="object-cover"
-                // style="color: transparent;"
-                // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
-                src="/section-services-ripol-alliance-gestao-de-patrimonio-logo.png"
-              />
+              {service.logo && (
+                <Image
+                  alt={`Logo ${service.title}`}
+                  loading="lazy"
+                  width={300}
+                  height={63}
+                  decoding="async"
+                  className="object-cover mt-auto"
+                  src={service.logo}
+                />
+              )}
             </div>
           ))}
-          {/*
-          <div className="w-50">
-            <Image
-              alt="Hero Illustration"
-              loading="eager"
-              width="616"
-              height="617"
-              decoding="async"
-              data-nimg="1"
-              className="object-cover mb-3"
-              // style="color: transparent;"
-              // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
-              src="/section-services-service-2.png"
-            />
-            <h2 className="text-2xl mb-3">Assessoria de investimentos</h2>
-            <p className="mb-3">
-              Lorem ipsum odor amet, consectetuer adipiscing elit. Mattis ante
-              pharetra et justo semper vehicula dui a. Dictumst mollis aliquam
-              ultricies vel massa conubia viverra urna. Semper mus class
-              dictumst placerat viverra sed gravida semper. Himenaeos natoque
-              blandit cubilia integer arcu nostra in proin tempus.
-            </p>
-            <p className="mb-5">
-              Dolor dignissim nisi tellus vivamus curae mollis non nibh.
-              Inceptos per semper torquent, dignissim sit facilisis blandit
-              semper. Magnis varius placerat scelerisque eu arcu interdum
-              torquent dui. Fusce rutrum lacinia magna blandit metus erat
-              tellus. Litora eleifend eu justo porttitor malesuada nisl.
-            </p>
-            <Image
-              alt="Ripol Alliance Multi-Family Office Logo Menu"
-              loading="lazy"
-              width="300"
-              height="63"
-              decoding="async"
-              data-nimg="1"
-              className="object-cover"
-              // style="color: transparent;"
-              // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
-              src="/section-services-ripol-alliance-assessoria-de-investimentos-logo.png"
-            />
-          </div>
-          <div className="w-50">
-            <Image
-              alt="Hero Illustration"
-              loading="eager"
-              width="616"
-              height="617"
-              decoding="async"
-              data-nimg="1"
-              className="object-cover mb-3"
-              // style="color: transparent;"
-              // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
-              src="/section-services-service-3.png"
-            />
-            <h2 className="text-2xl mb-3">
-              Curadoria jurídica Ronaldo Martins & Advogados
-            </h2>
-            <p className="mb-3">
-              Lorem ipsum odor amet, consectetuer adipiscing elit. Mattis ante
-              pharetra et justo semper vehicula dui a. Dictumst mollis aliquam
-              ultricies vel massa conubia viverra urna. Semper mus class
-              dictumst placerat viverra sed gravida semper. Himenaeos natoque
-              blandit cubilia integer arcu nostra in proin tempus.
-            </p>
-            <p className="mb-5">
-              Dolor dignissim nisi tellus vivamus curae mollis non nibh.
-              Inceptos per semper torquent, dignissim sit facilisis blandit
-              semper. Magnis varius placerat scelerisque eu arcu interdum
-              torquent dui. Fusce rutrum lacinia magna blandit metus erat
-              tellus. Litora eleifend eu justo porttitor malesuada nisl.
-            </p>
-            <Image
-              alt="Ripol Alliance Multi-Family Office Logo Menu"
-              loading="lazy"
-              width="300"
-              height="63"
-              decoding="async"
-              data-nimg="1"
-              className="object-cover"
-              // style="color: transparent;"
-              // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
-              src="/section-services-ronaldo-martins-advogados-logo.png"
-            />
-          </div>
-          <div className="w-50">
-            <Image
-              alt="Hero Illustration"
-              loading="eager"
-              width="616"
-              height="617"
-              decoding="async"
-              data-nimg="1"
-              className="object-cover mb-3"
-              // style="color: transparent;"
-              // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
-              src="/section-services-service-4.png"
-            />
-            <h2 className="text-2xl mb-3">Novos negócios</h2>
-            <p className="mb-3">
-              Lorem ipsum odor amet, consectetuer adipiscing elit. Mattis ante
-              pharetra et justo semper vehicula dui a. Dictumst mollis aliquam
-              ultricies vel massa conubia viverra urna. Semper mus class
-              dictumst placerat viverra sed gravida semper. Himenaeos natoque
-              blandit cubilia integer arcu nostra in proin tempus.
-            </p>
-            <p>
-              Dolor dignissim nisi tellus vivamus curae mollis non nibh.
-              Inceptos per semper torquent, dignissim sit facilisis blandit
-              semper. Magnis varius placerat scelerisque eu arcu interdum
-              torquent dui. Fusce rutrum lacinia magna blandit metus erat
-              tellus. Litora eleifend eu justo porttitor malesuada nisl.
-            </p>
-          </div>
-          */}
         </div>
       </div>
     </section>

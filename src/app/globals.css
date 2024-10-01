@@ -17,3 +17,16 @@ body {
     text-wrap: balance;
   }
 }
+
+.after-bg-image-services-gestao-patrimonial-umbrella::after {
+  background-image: url("/section-services-gestao-patrimonial-umbrella.png");
+}
+.after-bg-image-services-assessoria-investimentos-umbrella::after {
+  background-image: url("/section-services-assessoria-investimentos-umbrella.png");
+}
+.after-bg-image-services-curadoria-juridica-umbrella::after {
+  background-image: url("/section-services-curadoria-juridica-umbrella.png");
+}
+.after-bg-image-services-novos-negocios-umbrella::after {
+  background-image: url("/section-services-novos-negocios-umbrella.png");
+}
