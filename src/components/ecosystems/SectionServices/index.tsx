@@ -5,7 +5,8 @@ const services = [
   {
     image: "/section-services-service-1.png",
     umbrellaImage: "services-gestao-patrimonial-umbrella",
-    title: "Gestão patrimonial sucessão e planejamento",
+    title: "Gestão patrimonial",
+    subtitle: "sucessão e planejamento",
     description: [
       "A continuidade dos negócios familiares e a transmissão de valores e patrimônio para as próximas gerações são aspectos importantes para a Ripol Alliance.",
       "Por isso, o conselho-executivo e o time de especialistas trabalham de forma próxima a cada família para desenvolver um plano sucessório eficaz, garantindo que o processo de transição seja feito de maneira organizada e sob medida para cada contexto familiar.",
@@ -15,7 +16,7 @@ const services = [
   {
     image: "/section-services-service-2.png",
     umbrellaImage: "services-assessoria-investimentos-umbrella",
-    title: "Assessoria de investimentos",
+    title: "Assessoria de\ninvestimentos",
     description: [
       "Equipe independente de especialistas em investimentos financeiros, focada em construir estratégias que visam à otimização e diversificação dos ativos das famílias.",
       "O objetivo é garantir a preservação do capital a longo prazo, adaptando-se às condições de mercado e alinhando as estratégias de investimento às necessidades e expectativas de cada família.",
@@ -26,7 +27,8 @@ const services = [
   {
     image: "/section-services-service-3.png",
     umbrellaImage: "services-curadoria-juridica-umbrella",
-    title: "Curadoria jurídica Ronaldo Martins & Advogados",
+    title: "Curadoria jurídica",
+    subtitle: "Ronaldo Martins & Advogados",
     description: [
       "A Ripol Alliance conta com a expertise do escritório RONALDO MARTINS & Advogados para oferecer curadoria jurídica. Com mais de 30 anos de experiência, o escritório tem suas raízes em empresas familiares e atua em diversas áreas, como tributária, societária, contratuais, Mergers and Acquisitions (M&A), internacional, civil e trabalhista.",
       "Esse know-how permite proporcionar um apoio jurídico robusto, garantindo que todas as decisões estratégicas estejam em conformidade com a legislação vigente e sejam estruturadas para proteger o patrimônio e os interesses das famílias.",
@@ -36,7 +38,7 @@ const services = [
   {
     image: "/section-services-service-4.png",
     umbrellaImage: "services-novos-negocios-umbrella",
-    title: "Novos negócios",
+    title: "Novos\nnegócios",
     description: [
       "Área dedicada ao aconselhamento de nossos clientes sobre as oportunidades existentes de investimentos diretos na chamada Economia Real. Fazemos isso por meio da assessoria para operações de M&A e Joint Ventures, por exemplo.",
       "Também respondemos às demandas pontuais de nossos clientes junto ao mercado imobiliário para investimento em imóveis de uso pessoal ou comercial. Nossa abordagem inclui, ainda, outros produtos relacionados à formação e à proteção patrimonial, como os seguros de vida e de ativos. Para isso, atuamos na gestão de relacionamentos junto a outros profissionais independentes. Um verdadeiro atendimento personalizado dentro do conceito de Concierge.",
@@ -82,9 +84,15 @@ export const SectionServices = () => {
                   src={service.image}
                 />
               </div>
-              <h2 className="text-2xl mb-3">{service.title}</h2>
+              <h2 className="text-2xl whitespace-break-spaces uppercase mb-1">
+                {service.title}
+                {service.subtitle && (
+                  <span className="block text-xl">{service.subtitle}</span>
+                )}
+              </h2>
+              <hr className="mb-4 border-b-2 border-b-[--primary-color] w-8/12" />
               {service.description.map((p, index) => (
-                <p className="mb-3" key={`p-${index}`}>
+                <p className="mb-3 last-of-type:mb-6" key={`p-${index}`}>
                   {p}
                 </p>
               ))}
