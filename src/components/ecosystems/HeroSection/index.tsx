@@ -2,6 +2,7 @@
 import * as React from "react";
 import { Carousel } from "react-responsive-carousel";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+import Image from "next/image";
 
 const carouselItems = [
   {
@@ -58,7 +59,7 @@ export const HeroSection = () => {
             key={`key-${index}`}
             style={{ backgroundImage: `url(${item.background})` }}
           >
-            <div className="container mx-auto flex flex-col text-white text-left">
+            <div className="container mx-auto flex flex-col text-white text-left gap-12">
               <div className="w-9/12">
                 <h1 className="text-6xl mb-10">{item.title}</h1>
                 <p className="mb-8">{item.description}</p>
@@ -68,6 +69,40 @@ export const HeroSection = () => {
                 >
                   Conheça
                 </a>
+              </div>
+              <div className="flex justify-center">
+                <div className="flex flex-col lg:flex-row bg-white/[.3] w-9/12 p-4 rounded-lg gap-8">
+                  <div className="flex flex-row w-6/12 gap-4 items-center">
+                    <Image
+                      alt="Hero Illustration"
+                      loading="lazy"
+                      width={442}
+                      height={130}
+                      decoding="async"
+                      className="h-[130px] object-cover rounded-lg"
+                      src="/section-1-box-first-image.jpg"
+                    />
+                    <p>
+                      Um propósito de vida. Ações com o objetivo de buscar a
+                      essência de seu legado.
+                    </p>
+                  </div>
+                  <div className="flex flex-row w-6/12 gap-4 items-center">
+                    <Image
+                      alt="Hero Illustration"
+                      loading="lazy"
+                      width={442}
+                      height={130}
+                      decoding="async"
+                      className="h-[130px] object-cover rounded-lg"
+                      src="/section-1-box-last-image.jpeg"
+                    />
+                    <p>
+                      A família é o seu bem mais precioso. A construção e a
+                      manutenção do patrimônio familiar.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

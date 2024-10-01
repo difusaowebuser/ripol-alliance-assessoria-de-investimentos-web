@@ -48,7 +48,7 @@ export const SectionServices = () => {
           {services.map((service) => (
             <div className="w-50" key={service.umbrellaImage}>
               <div
-                className={`after:block after:relative after:bg-[url('/section-services-gestao-patrimonial-umbrella.png')] after:bg-contain after:-right-[50px] after:w-[100px] after:h-[100px] after:right-0 after:bottom-[100px] after:ml-auto after:mt-auto`}
+                className={`after:block after:relative after:bg-[url('/section-services-gestao-patrimonial-umbrella.png')] after:bg-contain after:-right-[50px] after:w-[100px] after:h-[100px] after:bottom-[100px] after:ml-auto after:mt-auto`}
               >
                 <Image
                   alt="Hero Illustration"
