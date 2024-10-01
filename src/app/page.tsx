@@ -1,3 +1,5 @@
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
 import { HeroSection } from "@/components/ecosystems/HeroSection";
 import { SectionGestaoPatrimonial } from "@/components/ecosystems/SectionGestaoPatrimonial";
 import { SectionProfessionals } from "@/components/ecosystems/SectionProfessionals";

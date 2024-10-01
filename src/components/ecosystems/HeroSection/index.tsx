@@ -1,7 +1,24 @@
 "use client";
 import * as React from "react";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+
+const carouselItems = [
+  {
+    background: "/section-hero-slider-1.jpg",
+    title:
+      "Gestão Patrimonial Novos Conceitos. Novas possibilidades. Desafiando os padrões atuais.",
+    description:
+      "Acreditamos nos valores da família e na execução de estratégias focada nas pessoas.",
+  },
+  {
+    background: "/section-hero-slider-2.jpeg",
+    title:
+      "Definir uma estratégia de ação no longo prazo para maximizar resultados",
+    description:
+      "Identificar múltiplos cenários a partir de uma estratégia focada em cada perfil familiar",
+  },
+];
 
 export const HeroSection = () => {
   return (
@@ -14,47 +31,47 @@ export const HeroSection = () => {
       <Carousel
         infiniteLoop={true}
         autoPlay={true}
-        interval={1000}
+        interval={10 * 1000} // 10 seg
         showStatus={false}
         showIndicators={false}
         showThumbs={false}
+        renderArrowPrev={(clickHandler) => (
+          <button
+            onClick={clickHandler}
+            className="control-arrow control-prev before:!hidden !pl-6"
+          >
+            <MdArrowBackIos className="text-6xl" />
+          </button>
+        )}
+        renderArrowNext={(clickHandler) => (
+          <button
+            onClick={clickHandler}
+            className="control-arrow control-next before:!hidden !pl-6"
+          >
+            <MdArrowForwardIos className="text-6xl" />
+          </button>
+        )}
       >
-        <div className="bg-[url('/section-hero-slider-1.jpg')] bg-cover bg-no-repeat w-full h-[85vh] py-48">
-          <div className="container mx-auto flex flex-col text-white text-left">
-            <h1 className="text-6xl mb-10">
-              1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </h1>
-            <p className="mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla.
-            </p>
-            <button className="border-2 border-[--primary-color] max-w-min rounded-full px-6 py-2 text-center font-body text-sm font-bold uppercase bg-black/[.5]">
-              Conheça
-            </button>
+        {carouselItems.map((item, index) => (
+          <div
+            className="bg-cover bg-no-repeat w-full h-[85vh] py-48"
+            key={`key-${index}`}
+            style={{ backgroundImage: `url(${item.background})` }}
+          >
+            <div className="container mx-auto flex flex-col text-white text-left">
+              <div className="w-9/12">
+                <h1 className="text-6xl mb-10">{item.title}</h1>
+                <p className="mb-8">{item.description}</p>
+                <a
+                  className="border-2 border-[--primary-color] max-w-min rounded-full px-6 py-2 text-center font-body text-sm font-bold uppercase bg-black/[.5]"
+                  href="#services"
+                >
+                  Conheça
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="bg-[url('/section-hero-slider-2.jpg')] bg-cover bg-no-repeat w-full h-[85vh] py-48">
-          <div className="container mx-auto flex flex-col text-white text-left">
-            <h1 className="text-6xl mb-10">
-              2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </h1>
-            <p className="mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla.
-            </p>
-            <button className="border-2 border-[--primary-color] max-w-min">
-              Conheça
-            </button>
-          </div>
-        </div>
+        ))}
       </Carousel>
     </section>
   );
