@@ -86,45 +86,48 @@ export const SectionFaq = () => {
             )
             .map((question) => (
               <div
-                className="container flex flex-col lg:flex-row mx-auto gap-8 py-10"
+                className="bg-[url('/section-faq-background.png')] bg-no-repeat bg-[center] lg:bg-[left_center] bg-[length:200px] relative"
                 key={question.image}
               >
-                <div className="flex flex-col w-full lg:w-7/12 items-start">
-                  <h2 className="text-5xl lg:text-6xl xl:text-7xl lg:tracking-tight xl:tracking-tighter mb-3 text-[--primary-color]">
-                    {question.title}
-                  </h2>
-                  <p className="text-lg mt-4 text-start">
-                    {question.description}
-                  </p>
-                </div>
-                <div className="flex items-center justify-center w-full lg:w-5/12">
-                  <Image
-                    alt={`Imagem de ${question.title}`}
-                    loading="lazy"
-                    width={1114}
-                    height={1227}
-                    decoding="async"
-                    className="object-cover !h-[400px] !w-full lg:!w-[300px] rounded-lg z-30"
-                    src={question.image}
-                  />
-                  <Image
-                    alt="Ripol Alliance Multi-Family Office Logo Menu"
-                    loading="lazy"
-                    width={512}
-                    height={512}
-                    decoding="async"
-                    className="object-cover !h-[75%] rounded-lg -ml-8 z-20 !hidden lg:!block"
-                    src={question.image2}
-                  />
-                  <Image
-                    alt="Ripol Alliance Multi-Family Office Logo Menu"
-                    loading="lazy"
-                    width={256}
-                    height={256}
-                    decoding="async"
-                    className="object-cover !h-[50%] rounded-lg -ml-8 z-10 !hidden lg:!block"
-                    src={question.image3}
-                  />
+                <div className="absolute inset-0 z-20 bg-gray-200/[0.8] bg-cover bg-center bg-no-repeat lg:hidden"></div>
+                <div className="container flex flex-col lg:flex-row mx-auto gap-8 py-10 relative z-30">
+                  <div className="flex flex-col w-full lg:w-7/12 items-start">
+                    <h2 className="text-5xl lg:text-6xl xl:text-7xl lg:tracking-tight xl:tracking-tighter mb-3 text-[--primary-color]">
+                      {question.title}
+                    </h2>
+                    <p className="text-lg mt-4 text-start">
+                      {question.description}
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-center w-full lg:w-5/12">
+                    <Image
+                      alt={`Imagem de ${question.title}`}
+                      loading="lazy"
+                      width={1114}
+                      height={1227}
+                      decoding="async"
+                      className="object-cover !h-[400px] !w-full lg:!w-[300px] rounded-lg z-30"
+                      src={question.image}
+                    />
+                    <Image
+                      alt="Ripol Alliance Multi-Family Office Logo Menu"
+                      loading="lazy"
+                      width={512}
+                      height={512}
+                      decoding="async"
+                      className="object-cover !h-[75%] rounded-lg -ml-8 z-20 !hidden lg:!block"
+                      src={question.image2}
+                    />
+                    <Image
+                      alt="Ripol Alliance Multi-Family Office Logo Menu"
+                      loading="lazy"
+                      width={256}
+                      height={256}
+                      decoding="async"
+                      className="object-cover !h-[50%] rounded-lg -ml-8 z-10 !hidden lg:!block"
+                      src={question.image3}
+                    />
+                  </div>
                 </div>
               </div>
             ))}
