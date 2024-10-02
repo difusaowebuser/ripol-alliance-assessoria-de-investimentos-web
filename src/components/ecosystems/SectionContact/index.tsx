@@ -10,10 +10,7 @@ export const SectionContact = () => {
             <h2 className="text-5xl lg:text-6xl mb-3">
               Entre em contato conosco
             </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna
-            </p>
+            <p>Como podemos te ajudar?</p>
             <div className="h-96"></div>
           </div>
         </div>
