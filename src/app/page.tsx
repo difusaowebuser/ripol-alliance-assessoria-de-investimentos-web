@@ -10,7 +10,7 @@ import { Header } from "@/components/ecosystems/Header";
 import { SectionWhoWeAre } from "@/components/ecosystems/SectionWhoWeAre";
 import { Section3 } from "@/components/ecosystems/Section3";
 import { Footer } from "@/components/ecosystems/Footer";
-import { Section9 } from "@/components/ecosystems/Section9";
+import { SectionFaq } from "@/components/ecosystems/SectionFaq";
 import { SectionContact } from "@/components/ecosystems/SectionContact";
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
         <SectionGestaoPatrimonial />
         <SectionProfessionals />
         <SectionPhrase />
-        <Section9 />
+        <SectionFaq />
         <SectionContact />
       </main>
       <Footer />

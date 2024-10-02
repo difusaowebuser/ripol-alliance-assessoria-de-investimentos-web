@@ -12,7 +12,9 @@ export const SectionSolutions = () => {
       <section className="bg-[url('/section-solutions-background.png')] bg-container bg-no-repeat bg-right my-20 py-20">
         <div className="container mx-auto">
           <h2 className="text-5xl lg:text-6xl xl:text-7xl text-white mb-8">
-            Entendemos a realidade de nossos clientes.
+            Entendemos a realidade de
+            <br />
+            nossos clientes.
           </h2>
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-20 lg:pl-20">
             {soluctions.map((service, index) => (

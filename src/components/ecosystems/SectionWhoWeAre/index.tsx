@@ -27,7 +27,6 @@ export const SectionWhoWeAre = () => {
         </div>
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl lg:pl-[5rem]">
-            <p className="font-bold">Qui si psum suspendi sse</p>
             <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter text-[--primary-color]">
               Quem somos
             </h1>
