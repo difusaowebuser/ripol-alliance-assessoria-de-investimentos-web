@@ -3,11 +3,7 @@ import Image from "next/image";
 
 export const SectionWhoWeAre = () => {
   return (
-    <section
-      className="bg-[url('/section-quem-somos-background.png')] bg-contain bg-no-repeat relative my-20 bg-[center_bottom_30%] lg:bg-[right_10%_center]"
-      id="who-we-are"
-    >
-      <div className="absolute inset-0 z-20 from-hero-gradient-from to-hero-gradient-to bg-white/[.95]"></div>
+    <section className="relative my-20" id="who-we-are">
       <div className="max-w-screen-2xl mx-auto container flex flex-wrap relative z-30 px-6">
         <div className="flex items-center justify-center w-full lg:w-1/2 mb-10 lg:mb-0">
           <div className="lg:pr-[3rem]">
@@ -28,18 +24,14 @@ export const SectionWhoWeAre = () => {
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl lg:pl-[5rem]">
             <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter text-[--primary-color]">
-              Quem somos
+              Assessoria de investimentos credenciada à XP
             </h1>
             <p className="text-lg mt-4 text-slate-600 max-w-xl">
-              Alinhada às práticas mais modernas de gestão empresarial, a Ripol
-              Alliance é um Multi-Family Office dedicado à gestão do patrimônio
-              de famílias que buscam segurança financeira, sustentabilidade e
-              fortalecimento de suas conquistas ao longo das gerações.
-            </p>
-            <p className="text-lg mt-4 text-slate-600 max-w-xl">
-              Ajudamos a cuidar desta gestão, desde o planejamento patrimonial e
-              sucessório até os investimentos, buscando arquitetura de modelos
-              de negócios que tragam um crescimento planejado e estruturado.
+              Atuamos na construção de estratégias que visam à otimização e
+              diversificação dos ativos das famílias e empresas. O objetivo é
+              garantir a preservação do capital a longo prazo, adaptando-se às
+              condições de mercado e alinhando as estratégias de investimento às
+              necessidades e expectativas de cada família.
             </p>
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
               <a

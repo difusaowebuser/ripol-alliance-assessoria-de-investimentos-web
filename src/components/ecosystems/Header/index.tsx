@@ -6,7 +6,7 @@ const links = [
   { link: "#partners", title: "Sócios" },
   { link: "#services", title: "Serviços" },
   { link: "#contact", title: "Contato" },
-  { link: "#", title: "Assessoria de investimentos" },
+  { link: "#", title: "Multi-Family Office" },
   { link: "#", title: "Gestão patrimonial" },
 ];
 
@@ -17,18 +17,25 @@ export const Header = () => {
         <div className="flex w-full lg:w-auto items-center justify-between">
           <a href="/" className="text-lg">
             <Image
-              alt="Ripol Alliance Multi-Family Office Logo Menu"
+              alt="Ripol Alliance Assessoria de Investimentos Logo Menu"
               loading="lazy"
-              width="300"
-              height="63"
+              width={300}
+              height={63}
               decoding="async"
-              data-nimg="1"
-              className="object-cover"
-              // style="color: transparent;"
-              // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
-              src="/ripol-alliance-multi-family-office-logo-menu.png"
+              className="h-[70px] object-contain"
+              src="/ripol-alliance-assessoria-de-investimentos-logo-menu.png"
             />
           </a>
+          <hr className="h-[70px] w-[2px] bg-white mx-2" />
+          <Image
+            alt="XP Investimentos Logo Menu"
+            loading="lazy"
+            width={121}
+            height={109}
+            decoding="async"
+            className="h-[70px] w-min object-contain"
+            src="/xp-investimentos-logo-menu.png"
+          />
         </div>
         <nav className="astronav-items astronav-toggle hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
           <ul className="flex flex-col lg:flex-row lg:gap-3">

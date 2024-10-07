@@ -6,18 +6,16 @@ import Image from "next/image";
 
 const carouselItems = [
   {
-    background: "/section-hero-slider-1.jpg",
-    title:
-      "Gestão Patrimonial Novos Conceitos. Novas possibilidades. Desafiando os padrões atuais.",
+    background: "/section-hero-slider-1.png",
+    title: "Desenvolvimento de soluções financeiras.",
     description:
-      "Acreditamos nos valores da família e na execução de estratégias focada nas pessoas.",
+      "Estamos alinhados com os objetivos individuais de cada família ou empresa, levando em consideração o contexto global e as tendências do mercado.",
   },
   {
-    background: "/section-hero-slider-2.jpg",
-    title:
-      "Definir uma estratégia de ação no longo prazo para maximizar resultados",
+    background: "/section-hero-slider-2.png",
+    title: "Transformamos oportunidades em resultados sólidos.",
     description:
-      "Identificar múltiplos cenários a partir de uma estratégia focada em cada perfil familiar",
+      "Cada decisão é pautada por uma análise profunda e estratégias que garantem segurança e crescimento sustentável.",
   },
 ];
 
@@ -77,11 +75,11 @@ export const HeroSection = () => {
                       height={248}
                       decoding="async"
                       className="h-[130px] object-cover rounded-lg"
-                      src="/section-1-box-first-image.jpg"
+                      src="/section-1-box-first-image.png"
                     />
                     <p>
-                      Um propósito de vida. Ações com o objetivo de buscar a
-                      essência de seu legado.
+                      Aumente sua rentabilidade com as decisões estratégicas
+                      assertivas.
                     </p>
                   </div>
                   <div className="flex flex-row w-6/12 gap-4 items-center">
@@ -95,8 +93,8 @@ export const HeroSection = () => {
                       src="/section-1-box-last-image.png"
                     />
                     <p>
-                      A família é o seu bem mais precioso. A construção e a
-                      manutenção do patrimônio familiar.
+                      As oportunidades de investimento são inúmeras, temos que
+                      saber como e onde aproveitá-las.
                     </p>
                   </div>
                 </div>
