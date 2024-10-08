@@ -6,13 +6,13 @@ import Image from "next/image";
 
 const carouselItems = [
   {
-    background: "/section-hero-slider-1.png",
+    background: "/images/section-hero-slider-1.png",
     title: "Desenvolvimento de soluções financeiras.",
     description:
       "Estamos alinhados com os objetivos individuais de cada família ou empresa, levando em consideração o contexto global e as tendências do mercado.",
   },
   {
-    background: "/section-hero-slider-2.png",
+    background: "/images/section-hero-slider-2.png",
     title: "Transformamos oportunidades em resultados sólidos.",
     description:
       "Cada decisão é pautada por uma análise profunda e estratégias que garantem segurança e crescimento sustentável.",
@@ -75,7 +75,7 @@ export const HeroSection = () => {
                       height={248}
                       decoding="async"
                       className="h-[130px] object-cover rounded-lg"
-                      src="/section-1-box-first-image.png"
+                      src="/images/section-1-box-first-image.png"
                     />
                     <p>
                       Aumente sua rentabilidade com as decisões estratégicas
@@ -90,7 +90,7 @@ export const HeroSection = () => {
                       height={248}
                       decoding="async"
                       className="h-[130px] object-cover rounded-lg"
-                      src="/section-1-box-last-image.png"
+                      src="/images/section-1-box-last-image.png"
                     />
                     <p>
                       As oportunidades de investimento são inúmeras, temos que

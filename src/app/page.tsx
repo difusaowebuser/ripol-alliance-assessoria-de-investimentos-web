@@ -1,7 +1,6 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 import { HeroSection } from "@/components/ecosystems/HeroSection";
-import { SectionGestaoPatrimonial } from "@/components/ecosystems/SectionGestaoPatrimonial";
 import { SectionProfessionals } from "@/components/ecosystems/SectionProfessionals";
 import { SectionPhrase } from "@/components/ecosystems/SectionPhrase";
 import { SectionSolutions } from "@/components/ecosystems/SectionSolutions";
@@ -23,7 +22,6 @@ export default function Home() {
         <Section3 />
         <SectionServices />
         <SectionSolutions />
-        <SectionGestaoPatrimonial />
         <SectionProfessionals />
         <SectionPhrase />
         <SectionFaq />

@@ -6,7 +6,7 @@ const links = [
   { link: "#partners", title: "Sócios" },
   { link: "#services", title: "Serviços" },
   { link: "#contact", title: "Contato" },
-  { link: "#", title: "Multi-Family Office" },
+  { link: "https://ripolalliance.com", title: "Multi-Family Office" },
   { link: "#", title: "Gestão patrimonial" },
 ];
 
@@ -23,7 +23,7 @@ export const Header = () => {
               height={63}
               decoding="async"
               className="h-[70px] object-contain"
-              src="/ripol-alliance-assessoria-de-investimentos-logo-menu.png"
+              src="/images/ripol-alliance-assessoria-de-investimentos-logo-menu.png"
             />
           </a>
           <hr className="h-[70px] w-[2px] bg-white mx-2" />
@@ -34,7 +34,7 @@ export const Header = () => {
             height={109}
             decoding="async"
             className="h-[70px] w-min object-contain"
-            src="/xp-investimentos-logo-menu.png"
+            src="/images/xp-investimentos-logo-menu.png"
           />
         </div>
         <nav className="astronav-items astronav-toggle hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
