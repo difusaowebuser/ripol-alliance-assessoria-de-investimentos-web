@@ -7,8 +7,7 @@ export const SectionPhrase = () => {
         <div className="py-48 bg-white/[.9]">
           <div className="container flex flex-col lg:flex-row mx-auto justify-center">
             <h3 className="text-2xl lg:text-3xl text-center">
-              Valorizamos sua trajetória, estudamos novos formatos de atuação e
-              buscamos propor ações que beneficiem o seu universo patrimonial.
+              Estamos comprometidos em proteger e expandir o seu capital.
             </h3>
           </div>
         </div>

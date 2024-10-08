@@ -10,14 +10,11 @@ export const SectionWhoWeAre = () => {
             <Image
               alt="Hero Illustration"
               loading="eager"
-              width="616"
-              height="617"
+              width={616}
+              height={617}
               decoding="async"
-              data-nimg="1"
               className="object-cover"
-              // style="color: transparent;"
-              // srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&amp;w=1920&amp;q=75 2x"
-              src="/section-quem-somos-image.png"
+              src="/images/section-quem-somos-image.png"
             />
           </div>
         </div>
