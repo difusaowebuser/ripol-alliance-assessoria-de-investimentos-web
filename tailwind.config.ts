@@ -7,18 +7,17 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "576px",
+      md: "768px",
+      lg: "992px",
+      xl: "1200px",
+      "2xl": "1400px",
+    },
     container: {
       padding: {
         DEFAULT: "1rem",
         sm: "1.5rem",
-      },
-      screens: {
-        // DEFAULT: '1rem',
-        sm: "576px",
-        md: "768px",
-        lg: "992px",
-        xl: "1200px",
-        "2xl": "1400px",
       },
     },
   },
