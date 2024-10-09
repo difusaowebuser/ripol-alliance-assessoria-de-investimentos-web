@@ -12,7 +12,7 @@ const carouselItems = [
       "Estamos alinhados com os objetivos individuais de cada família ou empresa, levando em consideração o contexto global e as tendências do mercado.",
   },
   {
-    background: "/images/section-hero-slider-2.png",
+    background: "/images/section-hero-slider-2.jpg",
     title: "Transformamos oportunidades em resultados sólidos.",
     description:
       "Cada decisão é pautada por uma análise profunda e estratégias que garantem segurança e crescimento sustentável.",
