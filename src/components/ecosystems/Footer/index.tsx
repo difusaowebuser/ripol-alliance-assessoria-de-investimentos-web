@@ -5,17 +5,31 @@ export const Footer = () => {
     <footer className="text-white border-t-8 border-[--primary-color]">
       <div className="bg-[--brown-color] py-6">
         <div className="flex items-center justify-between container mx-auto flex-col lg:flex-row">
-          <h2 className="text-[--primary-color] text-5xl lg:text-6xl mb-6 lg:mb-0 lg:pr-4">
-            Consectetur Adipiscing Elit
-          </h2>
           <p className="lg:pl-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            A Assessoria de Investimentos inscrita sobre o CNPJ
+            36.349.961/0001-53 é uma empresa de Assessoria de Investimentos
+            devidamente registrada na Comissão de Valores Mobiliários na forma
+            da resolução CVM178/23 9 (”Sociedade”), que mantém contrato de
+            distribuição de produtos financeiros com a XP Investimentos
+            Corretora de Câmbio, Títulos e Valores Mobiliários S.A. (“XP”) e
+            pode, por conta e ordem de seus clientes, operar no mercado de
+            capitais segundo a legislação vigente. Na forma da legislação da
+            CVM, o Assessor de Investimento não pode administrar o gerir o
+            patrimônio de investidores. O investimento em ações é um
+            investimento de risco e rentabilidade passada não é garantia de
+            rentabilidade futura. Na realização de operações com de derivativos
+            existe a possibilidade de perda superiores aos valores investidos,
+            podendo resultar em significativas perdas patrimoniais. A sociedade
+            poderá exercer atividades complementares relacionadas aos mercados
+            financeiros, securitário, de previdência e capitalização, desde que
+            não conflitem com a atividade de assessoria de investimentos,
+            podendo ser realizada por meio da pessoa jurídica acima descrita ou
+            por meio de pessoa jurídica terceira. Todas as atividades são
+            prestadas mantendo a devida segregação e em cumprimento ao quanto
+            previsto nas regras da CVM ou de outros órgãos reguladores e
+            autorreguladores. Para informações e dúvidas sobre produtos. contate
+            seu assessor de investimentos. Para reclamações, contate a Ouvidoria
+            da XP pelo telefone 0800 722 3730.
           </p>
           <div></div>
         </div>

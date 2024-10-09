@@ -6,8 +6,6 @@ const links = [
   { link: "#partners", title: "Sócios" },
   { link: "#services", title: "Serviços" },
   { link: "#contact", title: "Contato" },
-  { link: "https://ripolalliance.com", title: "Multi-Family Office" },
-  { link: "#", title: "Gestão patrimonial" },
 ];
 
 export const Header = () => {
