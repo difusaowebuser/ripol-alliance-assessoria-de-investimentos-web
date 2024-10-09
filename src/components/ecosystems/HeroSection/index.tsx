@@ -32,7 +32,7 @@ export const HeroSection = () => {
         renderArrowPrev={(clickHandler) => (
           <button
             onClick={clickHandler}
-            className="control-arrow control-prev before:!hidden !pl-6"
+            className="control-arrow control-prev before:!hidden !pl-4 !pr-0"
           >
             <MdArrowBackIos className="text-4xl lg:text-6xl" />
           </button>
@@ -40,7 +40,7 @@ export const HeroSection = () => {
         renderArrowNext={(clickHandler) => (
           <button
             onClick={clickHandler}
-            className="control-arrow control-next before:!hidden !pl-6"
+            className="control-arrow control-next before:!hidden !pl-4 !pr-0"
           >
             <MdArrowForwardIos className="text-4xl lg:text-6xl" />
           </button>
@@ -48,12 +48,12 @@ export const HeroSection = () => {
       >
         {carouselItems.map((item, index) => (
           <div
-            className="bg-cover bg-no-repeat w-full h-[85vh] py-28 lg:py-48"
+            className="bg-cover bg-no-repeat bg-center w-full h-[95vh] lg:h-[85vh] pt-[calc(102px+1rem)] pb-4 lg:py-48"
             key={`key-${index}`}
             style={{ backgroundImage: `url(${item.background})` }}
           >
-            <div className="container mx-auto flex flex-col text-white text-left gap-12">
-              <div className="w-9/12">
+            <div className="container mx-auto flex flex-col text-white text-left h-full justify-between">
+              <div className="w-full lg:w-9/12">
                 <h1 className="text-3xl lg:text-6xl mb-4 lg:mb-10">
                   {item.title}
                 </h1>
@@ -65,34 +65,34 @@ export const HeroSection = () => {
                   Conheça
                 </a>
               </div>
-              <div className="flex justify-center">
-                <div className="flex flex-col lg:flex-row bg-white/[.3] w-full lg:w-9/12 p-4 rounded-lg gap-8">
-                  <div className="flex flex-row w-6/12 gap-4 items-center">
+              <div className="flex justify-center mt-auto">
+                <div className="flex flex-col lg:flex-row bg-white/[.3] w-full lg:w-9/12 p-2 lg:p-4 rounded-lg gap-2 lg:gap-8">
+                  <div className="flex flex-row w-full lg:w-6/12 gap-4 items-center">
                     <Image
                       alt="Homem idoso com capacete e oculos escuro."
                       loading="lazy"
-                      width={442}
-                      height={248}
+                      width={231}
+                      height={130}
                       decoding="async"
-                      className="h-[130px] object-cover rounded-lg"
+                      className="!w-[150px] !h-[84px] object-cover rounded-lg"
                       src="/images/section-1-box-first-image.png"
                     />
-                    <p>
+                    <p className="text-sm lg:text-base">
                       Aumente sua rentabilidade com as decisões estratégicas
                       assertivas.
                     </p>
                   </div>
-                  <div className="flex flex-row w-6/12 gap-4 items-center">
+                  <div className="flex flex-row w-full lg:w-6/12 gap-4 items-center">
                     <Image
                       alt="Família pulando onda na praia."
                       loading="lazy"
-                      width={442}
-                      height={248}
+                      width={231}
+                      height={130}
                       decoding="async"
-                      className="h-[130px] object-cover rounded-lg"
+                      className="!w-[150px] !h-[84px] object-cover rounded-lg"
                       src="/images/section-1-box-last-image.png"
                     />
-                    <p>
+                    <p className="text-sm lg:text-base">
                       As oportunidades de investimento são inúmeras, temos que
                       saber como e onde aproveitá-las.
                     </p>

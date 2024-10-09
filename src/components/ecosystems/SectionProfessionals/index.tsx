@@ -47,10 +47,10 @@ export const SectionProfessionals = () => {
         <div className="container flex flex-col lg:flex-row mx-auto flex-wrap">
           {professionals.map(({ title, items }, index) => (
             <div
-              className="flex justify-center items-center w-1/2 flex-col"
+              className="flex justify-center items-center w-full lg:w-1/2 flex-col first-of-type:mb-8 lg:mb-0"
               key={`group-${title}-${index}`}
             >
-              <div className="flex justify-center items-center mb-4">
+              <div className="flex justify-center items-center mb-2 lg:mb-4">
                 <h3 className="text-2xl lg:text-4xl">{title}</h3>
               </div>
               <div className="flex items-center gap-10">
