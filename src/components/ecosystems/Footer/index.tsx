@@ -39,7 +39,7 @@ export const Footer = () => {
           <p>
             Todos os direitos reservados a{" "}
             <span className="font-bold">
-              Ripol Alliance Multi-Family Office
+              Ripol Alliance Assessoria de Investimentos
             </span>
           </p>
         </div>
