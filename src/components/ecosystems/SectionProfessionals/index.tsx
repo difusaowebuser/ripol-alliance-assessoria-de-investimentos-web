@@ -26,15 +26,15 @@ const professionals = [
     items: [
       {
         avatar: "/images/partner-rodrigo-matins.png",
-        link: "https://www.linkedin.com/in/sadi-neto-cfp%C2%AE-36243931",
-        name: "Sadi Ribeiro",
-        position: "CIO",
+        link: "https://www.linkedin.com/in/rodrigo-alonso-martins-8521926/",
+        name: "Rodrigo Martins",
+        position: "Fundador e CEO",
       },
       {
         avatar: "/images/partner-ronaldo-matins.png",
-        link: "https://www.linkedin.com/in/veridiana-ribeiro-7008b040/",
-        name: "Veridiana Ribeiro",
-        position: "Partner",
+        link: "https://www.linkedin.com/in/ronaldo-martins-9346288/",
+        name: "Ronaldo Martins",
+        position: "Fundador",
       },
     ],
   },

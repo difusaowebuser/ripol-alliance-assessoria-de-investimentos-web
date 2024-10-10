@@ -29,6 +29,7 @@ export const HeroSection = () => {
         showStatus={false}
         showIndicators={false}
         showThumbs={false}
+        swipeable={false}
         renderArrowPrev={(clickHandler) => (
           <button
             onClick={clickHandler}
